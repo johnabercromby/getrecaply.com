@@ -1,10 +1,7 @@
 import Link from 'next/link';
+import { AppStoreBadgeLink } from './AppStoreBadgeLink';
 
-type NavProps = {
-  appStoreUrl: string;
-};
-
-export function Nav({ appStoreUrl }: NavProps) {
+export function Nav() {
   return (
     <header className="site-nav">
       <div className="site-nav-inner">
@@ -22,9 +19,7 @@ export function Nav({ appStoreUrl }: NavProps) {
         </nav>
 
         <div className="site-nav-right">
-          <a href={appStoreUrl} className="site-nav-download" target="_blank" rel="noopener noreferrer">
-            Download
-          </a>
+          <AppStoreBadgeLink variant="nav" />
         </div>
       </div>
     </header>

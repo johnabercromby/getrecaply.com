@@ -172,55 +172,33 @@ a {
   color: var(--navy);
 }
 
-.site-nav-download {
+/* Official App Store badge (Apple AMS); see AppStoreBadgeLink.tsx */
+.app-store-badge-link {
   display: inline-flex;
   align-items: center;
-  padding: 10px 22px;
-  border-radius: 999px;
-  background: var(--navy);
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
+  line-height: 0;
   text-decoration: none;
-  white-space: nowrap;
-  transition: transform 0.15s ease, background 0.15s ease;
+  transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
-.site-nav-download:hover {
-  background: #223453;
+.app-store-badge-link:hover {
+  opacity: 0.9;
   transform: translateY(-1px);
 }
 
-/* ── Buttons / links ─────────────────────────────────────────────── */
-.btn-app-store {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 22px;
-  border-radius: 999px;
-  background: var(--navy);
-  color: #fff;
-  font-weight: 600;
-  font-size: 15px;
-  text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: transform 0.15s ease, background 0.15s ease;
+.app-store-badge-link img {
+  display: block;
+  width: 180px;
+  height: auto;
 }
 
-.btn-app-store:hover {
-  background: #223453;
-  transform: translateY(-1px);
+.app-store-badge-link--nav img {
+  width: 110px;
 }
 
-.btn-app-store-cta {
-  background: var(--gold);
-  color: var(--navy-dark);
-  border-color: transparent;
-}
-
-.btn-app-store-cta:hover {
-  background: #efbc84;
-  color: var(--navy-dark);
+.app-store-badge-link .app-store-badge-img--cta {
+  width: 250px;
+  max-width: 100%;
 }
 
 .text-link {

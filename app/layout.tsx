@@ -27,14 +27,14 @@ const jetbrains = JetBrains_Mono({
 });
 
 const description =
-  'Recaply turns what you save into audio you actually listen to — so nothing you find is wasted.';
+  'Recaply turns what you save into audio you actually listen to, so nothing you find is wasted.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://getrecaply.com'),
-  title: 'Recaply — Close your loops',
+  title: 'Recaply: Close your loops',
   description,
   openGraph: {
-    title: 'Recaply — Close your loops',
+    title: 'Recaply: Close your loops',
     description,
     url: 'https://getrecaply.com/',
     siteName: 'Recaply',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Recaply — Close your loops',
+    title: 'Recaply: Close your loops',
     description,
     images: ['/og.png'],
   },

@@ -1,10 +1,7 @@
+import { AppStoreBadgeLink } from './AppStoreBadgeLink';
 import { PhoneShell } from './PhoneShell';
 
-type HeroProps = {
-  appStoreUrl: string;
-};
-
-export function Hero({ appStoreUrl }: HeroProps) {
+export function Hero() {
   return (
     <section className="hero-section" aria-labelledby="hero-heading">
       <div className="hero-inner">
@@ -14,13 +11,11 @@ export function Hero({ appStoreUrl }: HeroProps) {
             What if saving something actually meant learning it?
           </h1>
           <p className="hero-lede">
-            Recaply listens to everything you stash away — links, notes, screenshots — and turns it into a weekly
+            Recaply listens to everything you stash away: links, notes, and screenshots. It turns that into a weekly
             briefing you can hear while you walk, cook, or commute. No extra chair. No guilt pile.
           </p>
           <div className="hero-actions">
-            <a href={appStoreUrl} className="btn-app-store" target="_blank" rel="noopener noreferrer">
-              Download on the App Store
-            </a>
+            <AppStoreBadgeLink variant="hero" />
             <a href="#how" className="text-link">
               See how it works
             </a>

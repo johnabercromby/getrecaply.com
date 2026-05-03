@@ -13,7 +13,7 @@ const mobileApplicationJsonLd = {
   '@type': 'MobileApplication',
   name: 'Recaply',
   description:
-    'Recaply turns what you save into audio you actually listen to — so nothing you find is wasted.',
+    'Recaply turns what you save into audio you actually listen to, so nothing you find is wasted.',
   url: 'https://getrecaply.com/',
   downloadUrl: 'https://apps.apple.com/app/recaply/id6757158392',
   operatingSystem: 'iOS',
@@ -34,14 +34,14 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(mobileApplicationJsonLd) }}
       />
-      <Nav appStoreUrl={APP_STORE} />
-      <Hero appStoreUrl={APP_STORE} />
+      <Nav />
+      <Hero />
       <ProblemSection />
       <HowItWorks />
       <WhyAudio />
       <Outcomes appStoreUrl={APP_STORE} />
       <FounderQuote />
-      <CTA appStoreUrl={APP_STORE} />
+      <CTA />
       <Footer />
     </>
   );

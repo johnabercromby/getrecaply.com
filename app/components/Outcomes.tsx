@@ -5,7 +5,7 @@ type OutcomesProps = {
 const cards = [
   {
     title: 'Synthesised, not bookmarked',
-    body: 'Hear the through-line across what you saved — not a robotic read-aloud of each tab.',
+    body: 'Hear the through-line across what you saved, not a robotic read-aloud of each tab.',
   },
   {
     title: 'Built for between moments',
@@ -17,7 +17,7 @@ const cards = [
   },
   {
     title: 'Indie-shaped product',
-    body: 'Made with care, shipped with restraint — designed to respect your attention, not harvest it.',
+    body: 'Made with care, shipped with restraint, and designed to respect your attention, not harvest it.',
   },
 ];
 

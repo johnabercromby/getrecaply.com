@@ -9,7 +9,7 @@ const steps = [
   {
     n: '02',
     title: 'We stitch the thread',
-    body: 'Your week becomes a narrative — not a list — so ideas connect even when you didn’t plan the connections.',
+    body: 'Your week becomes a narrative, not a list, so ideas connect even when you didn’t plan the connections.',
   },
   {
     n: '03',
