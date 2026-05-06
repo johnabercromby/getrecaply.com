@@ -42,6 +42,10 @@ export function Outcomes({ appStoreUrl }: OutcomesProps) {
         <div className="founding-strip">
           <div className="founding-strip-copy">
             <span className="founding-strip-kicker">Founding Member</span>
+            <p className="founding-strip-pricing-note">
+              Founding Member pricing is available while we&apos;re still early. Price will increase as the product
+              grows.
+            </p>
             <p className="founding-strip-text">
               Unlock richer recaps and early features while supporting indie work.
             </p>
