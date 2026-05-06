@@ -4,9 +4,8 @@ import './globals.css';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
-  weight: 'variable',
+  weight: ['400', '500', '600', '700'],
   style: ['normal', 'italic'],
-  axes: ['opsz'],
   variable: '--font-dm-sans',
   display: 'swap',
 });
