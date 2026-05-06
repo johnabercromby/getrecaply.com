@@ -1,11 +1,12 @@
+import { RecaplyLogo } from './RecaplyLogo';
+
 export function Footer() {
   return (
     <footer className="site-footer">
       <div className="site-footer-grid section-inner">
         <div className="footer-col">
           <div className="footer-brand">
-            <span className="site-nav-mark" aria-hidden />
-            <span className="footer-brand-name">Recaply</span>
+            <RecaplyLogo variant="footer" />
           </div>
           <p className="footer-tagline">Turn saves into something you actually finish.</p>
         </div>

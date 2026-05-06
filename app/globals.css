@@ -129,30 +129,25 @@ a {
 .site-nav-logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 600;
-  font-size: 1.05rem;
-  color: var(--navy);
   text-decoration: none;
+  line-height: 0;
 }
 
-.site-nav-mark {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
-  background: linear-gradient(145deg, var(--navy), #15263d);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
-  position: relative;
+.recaply-logo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 
-.site-nav-mark::after {
-  content: '';
-  position: absolute;
-  inset: 7px 8px auto;
-  height: 3px;
-  border-radius: 2px;
-  background: var(--gold);
-  opacity: 0.9;
+.recaply-logo--nav {
+  max-height: 28px;
+  max-width: min(200px, 42vw);
+}
+
+.recaply-logo--footer {
+  max-height: 32px;
+  max-width: min(220px, 70vw);
 }
 
 .site-nav-links {
@@ -1160,12 +1155,6 @@ a {
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
-}
-
-.footer-brand-name {
-  font-weight: 600;
-  font-size: 1.05rem;
-  color: #f4eee7;
 }
 
 .footer-tagline {

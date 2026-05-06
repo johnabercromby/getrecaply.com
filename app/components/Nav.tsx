@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { AppStoreBadgeLink } from './AppStoreBadgeLink';
+import { RecaplyLogo } from './RecaplyLogo';
 
 export function Nav() {
   return (
@@ -7,8 +8,7 @@ export function Nav() {
       <div className="site-nav-inner">
         <div className="site-nav-left">
           <Link href="/" className="site-nav-logo" aria-label="Recaply home">
-            <span className="site-nav-mark" aria-hidden />
-            <span>Recaply</span>
+            <RecaplyLogo variant="nav" />
           </Link>
         </div>
 
