@@ -10,7 +10,7 @@ export function WhyAudio() {
           <ul className="why-bullets">
             <li>Eyes-free: your attention can stay on the world in front of you.</li>
             <li>Emotion-forward: voice carries emphasis humans actually respond to.</li>
-            <li>Friction-down: one tap to start, with no tabs, no queues, and no “later”.</li>
+            <li>Friction-down: one tap to start. No switching apps, no losing your place.</li>
           </ul>
         </div>
 

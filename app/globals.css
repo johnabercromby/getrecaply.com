@@ -1080,23 +1080,16 @@ a {
 
 .founder-card {
   margin: 0;
-  display: grid;
-  grid-template-columns: 140px minmax(0, 1fr);
-  gap: 28px 36px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  gap: 18px;
   padding: 28px 32px;
   border-radius: 20px;
   background: #fff;
   border: 1px solid var(--hairline);
   box-shadow: 0 18px 50px rgba(15, 26, 40, 0.08);
-}
-
-.founder-photo {
-  width: 140px;
-  height: 140px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(31, 47, 74, 0.12), rgba(196, 95, 58, 0.35));
-  border: 1px solid var(--hairline);
 }
 
 .founder-quote {
@@ -1112,7 +1105,7 @@ a {
 }
 
 .founder-attrib {
-  grid-column: 2 / -1;
+  margin: 0;
   font-size: 14px;
   color: var(--ink-mute);
 }
@@ -1267,14 +1260,8 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .founder-photo {
-    width: 100%;
-    max-width: 200px;
-    height: 160px;
-  }
-
-  .founder-attrib {
-    grid-column: 1 / -1;
+  .founder-card {
+    padding: 24px 22px;
   }
 
   .site-footer-grid {
