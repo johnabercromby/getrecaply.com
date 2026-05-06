@@ -1,7 +1,3 @@
-type OutcomesProps = {
-  appStoreUrl: string;
-};
-
 const cards = [
   {
     title: 'Synthesised, not bookmarked',
@@ -21,7 +17,7 @@ const cards = [
   },
 ];
 
-export function Outcomes({ appStoreUrl }: OutcomesProps) {
+export function Outcomes() {
   return (
     <section id="outcomes" className="outcomes-section" aria-labelledby="outcomes-heading">
       <div className="section-inner">
@@ -37,22 +33,6 @@ export function Outcomes({ appStoreUrl }: OutcomesProps) {
               <p>{c.body}</p>
             </article>
           ))}
-        </div>
-
-        <div className="founding-strip">
-          <div className="founding-strip-copy">
-            <span className="founding-strip-kicker">Founding Member</span>
-            <p className="founding-strip-pricing-note">
-              Founding Member pricing is available while we&apos;re still early. Price will increase as the product
-              grows.
-            </p>
-            <p className="founding-strip-text">
-              Unlock richer recaps and early features while supporting indie work.
-            </p>
-          </div>
-          <a href={appStoreUrl} className="founding-strip-btn" target="_blank" rel="noopener noreferrer">
-            What&apos;s included →
-          </a>
         </div>
       </div>
     </section>

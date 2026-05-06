@@ -25,8 +25,6 @@ const mobileApplicationJsonLd = {
   },
 };
 
-const APP_STORE = 'https://apps.apple.com/app/recaply/id6757158392';
-
 export default function Home() {
   return (
     <>
@@ -39,7 +37,7 @@ export default function Home() {
       <ProblemSection />
       <HowItWorks />
       <WhyAudio />
-      <Outcomes appStoreUrl={APP_STORE} />
+      <Outcomes />
       <FounderQuote />
       <CTA />
       <Footer />
