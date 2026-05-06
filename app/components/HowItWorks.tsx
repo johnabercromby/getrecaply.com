@@ -106,7 +106,7 @@ export function HowItWorks() {
   return (
     <section id="how" className="how-section" aria-labelledby="how-heading">
       <div className="section-inner">
-        <p className="eyebrow">I · HOW IT WORKS</p>
+        <p className="eyebrow">HOW IT WORKS</p>
         <h2 id="how-heading" className="display-headline">
           Three moves. <span className="headline-soft">One habit.</span>
         </h2>

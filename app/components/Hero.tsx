@@ -6,7 +6,7 @@ export function Hero() {
     <section className="hero-section" aria-labelledby="hero-heading">
       <div className="hero-inner">
         <div className="hero-copy">
-          <p className="eyebrow">I · THE HOOK</p>
+          <p className="hero-app-pill">Now on the App Store</p>
           <h1 id="hero-heading" className="display-headline">
             What if saving something actually meant learning it?
           </h1>
@@ -14,15 +14,14 @@ export function Hero() {
             Recaply listens to everything you stash away: links, notes, and screenshots. It turns that into a weekly
             briefing you can hear while you walk, cook, or commute. No extra chair. No guilt pile.
           </p>
+          <p className="hero-lede-quote">
+            The best ideas shouldn&apos;t die in a folder you&apos;ll open on Sunday.
+          </p>
           <div className="hero-actions">
             <AppStoreBadgeLink variant="hero" />
             <a href="#how" className="text-link">
               See how it works
             </a>
-          </div>
-          <div className="hero-stat" aria-label="Community stat">
-            <span className="hero-stat-number">2,041,398</span>
-            <span className="hero-stat-label">items saved this month</span>
           </div>
         </div>
 

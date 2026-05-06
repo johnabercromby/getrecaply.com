@@ -3,7 +3,7 @@ export function WhyAudio() {
     <section id="why-audio" className="why-section" aria-labelledby="why-heading">
       <div className="section-inner why-inner">
         <div className="why-copy">
-          <p className="eyebrow">I · WHY AUDIO</p>
+          <p className="eyebrow">WHY AUDIO</p>
           <h2 id="why-heading" className="display-headline">
             Reading takes a chair. <span className="headline-soft">Listening takes nothing.</span>
           </h2>

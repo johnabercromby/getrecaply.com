@@ -25,7 +25,7 @@ export function Outcomes({ appStoreUrl }: OutcomesProps) {
   return (
     <section id="outcomes" className="outcomes-section" aria-labelledby="outcomes-heading">
       <div className="section-inner">
-        <p className="eyebrow">I · OUTCOMES</p>
+        <p className="eyebrow">OUTCOMES</p>
         <h2 id="outcomes-heading" className="display-headline">
           Not a longer to-read list. <em className="accent-gold">An actually-read one.</em>
         </h2>
@@ -42,7 +42,9 @@ export function Outcomes({ appStoreUrl }: OutcomesProps) {
         <div className="founding-strip">
           <div className="founding-strip-copy">
             <span className="founding-strip-kicker">Founding Member</span>
-            <span className="founding-strip-text">Unlock richer recaps and early features while supporting indie work.</span>
+            <p className="founding-strip-text">
+              Unlock richer recaps and early features while supporting indie work.
+            </p>
           </div>
           <a href={appStoreUrl} className="founding-strip-btn" target="_blank" rel="noopener noreferrer">
             What&apos;s included →

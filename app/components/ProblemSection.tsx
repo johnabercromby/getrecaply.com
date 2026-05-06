@@ -2,7 +2,7 @@ export function ProblemSection() {
   return (
     <section id="problem" className="problem-section" aria-labelledby="problem-heading">
       <div className="section-inner">
-        <p className="eyebrow eyebrow-on-dark">I · THE PROBLEM</p>
+        <p className="eyebrow eyebrow-on-dark">THE PROBLEM</p>
         <h2 id="problem-heading" className="display-headline display-headline-on-dark">
           Your bookmarks folder is a <em className="accent-gold">graveyard.</em>
         </h2>
