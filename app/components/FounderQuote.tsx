@@ -5,11 +5,11 @@ export function FounderQuote() {
         <figure className="founder-card">
           <blockquote className="founder-quote" id="founder-quote">
             <p>
-              We built Recaply because the best ideas shouldn&apos;t die in a folder you pretend you&apos;ll open on
-              Sunday. If we can make &quot;saved&quot; mean &quot;heard&quot;, we&apos;ll have done something honest.
+              I built Recaply because my own reading list had become a source of guilt. I wanted permission to keep
+              being curious without owing anyone, including myself, anything in return.
             </p>
           </blockquote>
-          <figcaption className="founder-attrib">John Abercromby · Founder, Recaply · Berkhamsted, UK</figcaption>
+          <figcaption className="founder-attrib">John Abercromby · Founder · Berkhamsted, UK</figcaption>
         </figure>
       </div>
     </section>
