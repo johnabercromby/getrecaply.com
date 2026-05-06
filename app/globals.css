@@ -7,7 +7,7 @@
   --cream: #f4eee7;
   --navy: #1f2f4a;
   --navy-dark: #0f1a28;
-  --gold: #e6b47e;
+  --gold: #c45f3a;
   --ink: #2b2621;
   --ink-soft: rgba(43, 38, 33, 0.72);
   --ink-mute: rgba(43, 38, 33, 0.48);
@@ -60,8 +60,8 @@ a {
 }
 
 .display-headline {
-  font-family: var(--font-dm-serif), Georgia, 'Times New Roman', serif;
-  font-size: clamp(2.75rem, 5.5vw, 5rem);
+  font-family: var(--font-fraunces), Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.42rem, 4.84vw, 4.4rem);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.03em;
@@ -82,9 +82,14 @@ a {
 }
 
 .accent-gold {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.accent-cta {
   font-style: italic;
   font-weight: 400;
-  color: var(--gold);
 }
 
 .section-inner {
@@ -98,7 +103,7 @@ a {
   inset: 0 0 auto;
   z-index: 50;
   height: var(--nav-h);
-  border-bottom: 1px solid var(--hairline);
+  border-bottom: 1px solid rgba(196, 95, 58, 0.3);
   background: color-mix(in srgb, var(--cream) 88%, transparent);
   backdrop-filter: blur(14px);
 }
@@ -215,7 +220,7 @@ a {
 
 /* ── Hero ────────────────────────────────────────────────────────── */
 .hero-section {
-  padding: 40px 0 56px;
+  padding: 32px 0 45px;
 }
 
 .hero-inner {
@@ -369,7 +374,7 @@ a {
 }
 
 .mock-title {
-  font-family: var(--font-dm-serif), Georgia, serif;
+  font-family: var(--font-fraunces), Georgia, serif;
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--navy);
@@ -529,7 +534,7 @@ a {
 }
 
 .mock-capture-chip-accent {
-  background: rgba(230, 180, 126, 0.45);
+  background: rgba(196, 95, 58, 0.45);
   color: var(--navy);
 }
 
@@ -555,11 +560,11 @@ a {
   height: 28px;
   border-radius: 8px;
   flex-shrink: 0;
-  background: linear-gradient(135deg, rgba(31, 47, 74, 0.15), rgba(230, 180, 126, 0.35));
+  background: linear-gradient(135deg, rgba(31, 47, 74, 0.15), rgba(196, 95, 58, 0.35));
 }
 
 .mock-capture-thumb-audio {
-  background: linear-gradient(135deg, rgba(31, 47, 74, 0.35), rgba(230, 180, 126, 0.55));
+  background: linear-gradient(135deg, rgba(31, 47, 74, 0.35), rgba(196, 95, 58, 0.55));
 }
 
 .mock-capture-lines {
@@ -659,7 +664,7 @@ a {
   border-radius: 50%;
   background: var(--navy);
   border: 2px solid var(--cream);
-  box-shadow: 0 0 0 2px rgba(230, 180, 126, 0.6);
+  box-shadow: 0 0 0 2px rgba(196, 95, 58, 0.6);
 }
 
 .mock-thread-card-title {
@@ -699,7 +704,7 @@ a {
   text-transform: uppercase;
   padding: 5px 10px;
   border-radius: 999px;
-  background: rgba(230, 180, 126, 0.35);
+  background: rgba(196, 95, 58, 0.35);
   color: var(--navy);
 }
 
@@ -794,7 +799,7 @@ a {
 .problem-section {
   background: #0f1a28;
   color: rgba(255, 255, 255, 0.78);
-  padding: 56px 0 64px;
+  padding: 45px 0 51px;
 }
 
 .problem-columns {
@@ -822,7 +827,7 @@ a {
 }
 
 .problem-stat-value {
-  font-family: var(--font-dm-serif), Georgia, serif;
+  font-family: var(--font-fraunces), Georgia, serif;
   font-size: clamp(3.5rem, 10vw, 5.5rem);
   font-weight: 700;
   color: var(--gold);
@@ -839,7 +844,7 @@ a {
 
 /* ── How it works ────────────────────────────────────────────────── */
 .how-section {
-  padding: 56px 0 64px;
+  padding: 45px 0 51px;
 }
 
 .how-grid {
@@ -855,7 +860,7 @@ a {
 }
 
 .how-card-title {
-  font-family: var(--font-dm-serif), Georgia, serif;
+  font-family: var(--font-fraunces), Georgia, serif;
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--navy);
@@ -871,7 +876,7 @@ a {
 
 /* ── Why audio ───────────────────────────────────────────────────── */
 .why-section {
-  padding: 56px 0 64px;
+  padding: 45px 0 51px;
   border-top: 1px solid var(--hairline);
 }
 
@@ -977,7 +982,7 @@ a {
 
 /* ── Outcomes ────────────────────────────────────────────────────── */
 .outcomes-section {
-  padding: 56px 0 56px;
+  padding: 45px 0 45px;
 }
 
 .outcomes-grid {
@@ -1001,7 +1006,7 @@ a {
 
 .outcome-card h3 {
   margin: 0 0 0.5rem;
-  font-family: var(--font-dm-serif), Georgia, serif;
+  font-family: var(--font-fraunces), Georgia, serif;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--navy);
@@ -1022,8 +1027,8 @@ a {
   gap: 16px 24px;
   padding: 18px 22px;
   border-radius: 16px;
-  border: 1px solid rgba(230, 180, 126, 0.45);
-  background: linear-gradient(90deg, rgba(230, 180, 126, 0.18), rgba(31, 47, 74, 0.06));
+  border: 1px solid rgba(196, 95, 58, 0.45);
+  background: linear-gradient(90deg, rgba(196, 95, 58, 0.18), rgba(31, 47, 74, 0.06));
 }
 
 .founding-strip-copy {
@@ -1070,7 +1075,7 @@ a {
 
 /* ── Founder quote ───────────────────────────────────────────────── */
 .founder-section {
-  padding: 0 0 48px;
+  padding: 0 0 38px;
 }
 
 .founder-card {
@@ -1090,7 +1095,7 @@ a {
   width: 140px;
   height: 140px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(31, 47, 74, 0.12), rgba(230, 180, 126, 0.35));
+  background: linear-gradient(135deg, rgba(31, 47, 74, 0.12), rgba(196, 95, 58, 0.35));
   border: 1px solid var(--hairline);
 }
 
@@ -1100,7 +1105,7 @@ a {
 
 .founder-quote p {
   margin: 0;
-  font-family: var(--font-dm-serif), Georgia, serif;
+  font-family: var(--font-fraunces), Georgia, serif;
   font-size: clamp(1.35rem, 2.4vw, 1.75rem);
   line-height: 1.45;
   color: var(--navy);
@@ -1115,7 +1120,7 @@ a {
 /* ── CTA ─────────────────────────────────────────────────────────── */
 .cta-section {
   background: var(--navy-dark);
-  padding: 72px 0 80px;
+  padding: 58px 0 64px;
 }
 
 .cta-inner {
@@ -1136,7 +1141,7 @@ a {
 .site-footer {
   background: var(--navy-dark);
   color: rgba(255, 255, 255, 0.78);
-  padding: 56px 0 28px;
+  padding: 45px 0 22px;
   border-top: 1px solid var(--hairline-on-dark);
 }
 

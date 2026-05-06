@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { DM_Sans, DM_Serif_Display, JetBrains_Mono } from 'next/font/google';
+import { DM_Sans, Fraunces, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 
 const dmSans = DM_Sans({
@@ -11,11 +11,11 @@ const dmSans = DM_Sans({
   display: 'swap',
 });
 
-const dmSerif = DM_Serif_Display({
+const fraunces = Fraunces({
   subsets: ['latin'],
-  weight: '400',
+  weight: ['400', '700'],
   style: ['normal', 'italic'],
-  variable: '--font-dm-serif',
+  variable: '--font-fraunces',
   display: 'swap',
 });
 
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${dmSerif.variable} ${jetbrains.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${fraunces.variable} ${jetbrains.variable}`}>
       <body>{children}</body>
     </html>
   );
