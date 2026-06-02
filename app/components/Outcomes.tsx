@@ -23,7 +23,7 @@ export function Outcomes() {
       <div className="section-inner">
         <p className="eyebrow">OUTCOMES</p>
         <h2 id="outcomes-heading" className="display-headline">
-          Not a longer to-read list. <em className="accent-gold">An actually-read one.</em>
+          Your saves, actually used.
         </h2>
 
         <div className="outcomes-grid">

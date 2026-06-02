@@ -25,46 +25,16 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="hero-phones" aria-hidden>
-          <div className="hero-phone hero-phone-back">
-            <PhoneShell>
-              <div className="mock-ui mock-ui-queue">
-                <div className="mock-row">
-                  <span className="mock-dot" />
-                  <span className="mock-line mock-line-short" />
-                </div>
-                <div className="mock-row">
-                  <span className="mock-dot" />
-                  <span className="mock-line mock-line-mid" />
-                </div>
-                <div className="mock-row">
-                  <span className="mock-dot" />
-                  <span className="mock-line mock-line-long" />
-                </div>
-                <div className="mock-card mock-card-navy">
-                  <span className="mock-pill" />
-                  <span className="mock-line mock-line-mid" />
-                </div>
-              </div>
-            </PhoneShell>
-          </div>
-          <div className="hero-phone hero-phone-front">
-            <PhoneShell>
-              <div className="mock-ui mock-ui-home">
-                <div className="mock-hero-pill">This week</div>
-                <div className="mock-title">Your recap is ready</div>
-                <div className="mock-sub">14 min · 9 sources</div>
-                <div className="mock-wave">
-                  {Array.from({ length: 12 }).map((_, i) => (
-                    <span key={i} className="mock-bar" />
-                  ))}
-                </div>
-                <div className="mock-play-row">
-                  <span className="mock-play" />
-                </div>
-              </div>
-            </PhoneShell>
-          </div>
+        <div className="hero-visual" aria-hidden>
+          <PhoneShell className="hero-phone-frame">
+            <img
+              className="phone-screen-img phone-screen-img-cover"
+              src="/images/apps/full/home.png"
+              alt=""
+              width={1179}
+              height={2406}
+            />
+          </PhoneShell>
         </div>
       </div>
     </section>

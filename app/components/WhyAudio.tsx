@@ -1,3 +1,5 @@
+import { PhoneShell } from './PhoneShell';
+
 export function WhyAudio() {
   return (
     <section id="why-audio" className="why-section" aria-labelledby="why-heading">
@@ -14,21 +16,16 @@ export function WhyAudio() {
           </ul>
         </div>
 
-        <div className="why-player" aria-label="Illustration of recap player">
-          <div className="why-player-top">
-            <span className="why-player-label">Now playing</span>
-            <span className="why-player-title">Your week, synthesised</span>
-          </div>
-          <div className="why-player-wave" aria-hidden>
-            {Array.from({ length: 18 }).map((_, i) => (
-              <span key={i} className="why-bar" />
-            ))}
-          </div>
-          <div className="why-player-controls">
-            <span className="why-dot" />
-            <span className="why-play" />
-            <span className="why-dot" />
-          </div>
+        <div className="why-phone-visual" aria-label="Recap detail app screen">
+          <PhoneShell className="phone-shell-app-shot">
+            <img
+              className="phone-screen-img"
+              src="/images/apps/full/recap-detail.png"
+              alt="Recap detail screen"
+              width={1179}
+              height={2406}
+            />
+          </PhoneShell>
         </div>
       </div>
     </section>

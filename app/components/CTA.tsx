@@ -5,7 +5,7 @@ export function CTA() {
     <section className="cta-section" aria-labelledby="cta-heading">
       <div className="cta-inner section-inner">
         <h2 id="cta-heading" className="display-headline display-headline-on-dark">
-          Start closing your <em className="accent-gold accent-cta">loops.</em>
+          Start closing your <em className="accent-gold">loops.</em>
         </h2>
         <AppStoreBadgeLink variant="cta" />
         <p className="cta-note">Android · coming later this year</p>
