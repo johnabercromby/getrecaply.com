@@ -7,13 +7,14 @@ export function WhyAudio() {
         <div className="why-copy">
           <p className="eyebrow">WHY AUDIO</p>
           <h2 id="why-heading" className="display-headline">
-            Reading takes a chair. <span className="headline-soft">Listening takes nothing.</span>
+            Because finding time is the hard part.
           </h2>
-          <ul className="why-bullets">
-            <li>Eyes-free: your attention can stay on the world in front of you.</li>
-            <li>Emotion-forward: voice carries emphasis humans actually respond to.</li>
-            <li>Friction-down: one tap to start. No switching apps, no losing your place.</li>
-          </ul>
+          <div className="why-body">
+            <p>Most people don't struggle to find interesting things. They struggle to find time for them.</p>
+            <p>Recaply turns the things you've saved into something you can listen to whenever it suits you.</p>
+            <p>No reading list. No guilt. No catching up at the weekend.</p>
+            <p>Just a simple way to stay connected to the things that interested you.</p>
+          </div>
         </div>
 
         <div className="why-phone-visual" aria-label="Recap detail app screen">

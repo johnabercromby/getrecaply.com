@@ -7,10 +7,10 @@ const description =
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://getrecaply.com'),
-  title: 'Recaply: Close your loops',
+  title: 'Recaply: Saved for later. Later is here.',
   description,
   openGraph: {
-    title: 'Recaply: Close your loops',
+    title: 'Recaply: Saved for later. Later is here.',
     description,
     url: 'https://getrecaply.com/',
     siteName: 'Recaply',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Recaply: Close your loops',
+    title: 'Recaply: Saved for later. Later is here.',
     description,
     images: ['/og.png'],
   },

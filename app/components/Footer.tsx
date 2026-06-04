@@ -37,7 +37,7 @@ export function Footer() {
         </div>
       </div>
       <div className="footer-meta section-inner">
-        <p className="footer-meta-line">© 2026 Recaply · ALL LOOPS CLOSED</p>
+        <p className="footer-meta-line">© 2026 Recaply</p>
       </div>
     </footer>
   );

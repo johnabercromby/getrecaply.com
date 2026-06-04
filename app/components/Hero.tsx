@@ -8,14 +8,11 @@ export function Hero() {
         <div className="hero-copy">
           <p className="hero-app-pill">Now on the App Store</p>
           <h1 id="hero-heading" className="display-headline">
-            What if saving something actually meant learning it?
+            Saved for later. Later is here.
           </h1>
           <p className="hero-lede">
-            Recaply listens to everything you stash away: links, notes, and screenshots. It turns that into a weekly
-            briefing you can hear while you walk, cook, or commute. No extra chair. No guilt pile.
-          </p>
-          <p className="hero-lede-quote">
-            The best ideas shouldn&apos;t die in a folder you&apos;ll open on Sunday.
+            You save articles, videos, podcasts and ideas because they interest you. Recaply turns them into a
+            personalised weekly audio recap so you can finally catch up with the things that caught your attention.
           </p>
           <div className="hero-actions">
             <AppStoreBadgeLink variant="hero" />

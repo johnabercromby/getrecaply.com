@@ -1,23 +1,23 @@
 const steps = [
   {
     n: '01',
-    title: 'Save anything',
-    body: 'Drop links, notes, screenshots, and voice memos into Recaply from share sheets and quick capture.',
+    title: 'You save things',
+    body: 'Articles, videos, podcasts, newsletters, screenshots, notes. Whatever catches your attention.',
   },
   {
     n: '02',
-    title: 'We synthesise',
-    body: 'Your week becomes a narrative, not a list, so ideas connect even when you didn’t plan the connections.',
+    title: 'We organise them',
+    body: "Recaply reads, watches and groups everything you've saved.",
   },
   {
     n: '03',
-    title: 'You get a recap',
-    body: 'A recap lands on the day you choose, long enough to close loops and short enough to fit between everything else.',
+    title: 'Get your recap',
+    body: 'A personalised audio recap delivered on the day you choose.',
   },
   {
     n: '04',
-    title: 'Listen anywhere',
-    body: 'Walking counts. Washing up counts. Closing loops counts.',
+    title: 'Listen when it suits you',
+    body: 'On a walk. In the car. While cooking dinner. Whenever works for you.',
   },
 ] as const;
 
@@ -27,7 +27,7 @@ export function HowItWorks() {
       <div className="section-inner">
         <p className="eyebrow">HOW IT WORKS</p>
         <h2 id="how-heading" className="display-headline">
-          Four moves. <span className="headline-soft">One habit.</span>
+          You save things. <span className="headline-soft">We help you come back to them.</span>
         </h2>
         <div className="how-grid">
           {steps.map((s) => (

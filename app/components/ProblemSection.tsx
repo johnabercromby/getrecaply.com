@@ -3,16 +3,16 @@ export function ProblemSection() {
     <section id="problem" className="problem-section" aria-labelledby="problem-heading">
       <div className="section-inner">
         <h2 id="problem-heading" className="display-headline display-headline-on-dark">
-          Your bookmarks folder is a <em className="accent-gold">graveyard.</em>
+          Your curiosity is doing fine. Your calendar is the problem.
         </h2>
         <div className="problem-columns">
           <p>
-            Every “save for later” quietly dies of neglect. The folder grows, the guilt grows, and the interesting
-            version of you never shows up, because reading isn’t a habit, it’s an appointment you keep postponing.
+            Most people don't save things because they're disorganised. They save things because they're interested.
+            An article they genuinely want to read. A podcast recommended by a friend. A video they mean to watch later.
           </p>
           <p>
-            Recaply doesn’t ask for more screen time. It asks for your ears for a few minutes a week, long enough to
-            close loops and short enough to fit between everything else you’re already doing.
+            The problem isn't finding interesting things. It's finding time to come back to them. That's where Recaply
+            helps.
           </p>
         </div>
       </div>

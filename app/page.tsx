@@ -6,7 +6,7 @@ import { HowItWorks } from './components/HowItWorks';
 import { Nav } from './components/Nav';
 import { Outcomes } from './components/Outcomes';
 import { ProblemSection } from './components/ProblemSection';
-import { TrustBar } from './components/TrustBar';
+import { RealLifeExample } from './components/RealLifeExample';
 import { WhyAudio } from './components/WhyAudio';
 
 const mobileApplicationJsonLd = {
@@ -35,7 +35,7 @@ export default function Home() {
       />
       <Nav />
       <Hero />
-      <TrustBar />
+      <RealLifeExample />
       <ProblemSection />
       <HowItWorks />
       <WhyAudio />

@@ -254,14 +254,6 @@ a {
   color: var(--ink-soft);
 }
 
-.hero-lede-quote {
-  margin: 0 0 1.5rem;
-  max-width: 52ch;
-  font-size: 0.95rem;
-  line-height: 1.55;
-  color: var(--ink-mute);
-}
-
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -363,106 +355,32 @@ a {
   object-fit: cover;
 }
 
-/* ── Trust bar ───────────────────────────────────────────────────── */
-.trust-section {
+/* ── Real-life example ───────────────────────────────────────────── */
+.example-section {
   background: var(--dark-bg);
   color: var(--dark-text);
   border-top: 1px solid var(--dark-border);
   border-bottom: 1px solid var(--dark-border);
-  padding: 24px 0;
+  padding: 44px 0 48px;
 }
 
-.trust-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px;
-}
-
-.trust-item {
-  display: grid;
-  grid-template-columns: 22px minmax(0, 1fr);
-  gap: 12px;
-  align-items: start;
-}
-
-.trust-icon {
-  width: 18px;
-  height: 18px;
-  margin-top: 2px;
-  color: var(--gold);
-  opacity: 0.8;
-  position: relative;
-}
-
-.trust-icon-lock::before {
-  content: '';
-  position: absolute;
-  inset: 7px 2px 1px;
-  border: 1.5px solid currentColor;
-  border-radius: 3px;
-}
-
-.trust-icon-lock::after {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: 1px;
-  width: 8px;
-  height: 8px;
-  border: 1.5px solid currentColor;
-  border-bottom: 0;
-  border-radius: 8px 8px 0 0;
-}
-
-.trust-icon-wave::before {
-  content: '';
-  position: absolute;
-  left: 2px;
-  right: 2px;
-  top: 8px;
-  height: 2px;
-  background: currentColor;
-  box-shadow: 4px -4px 0 currentColor, 8px 4px 0 currentColor, 12px -2px 0 currentColor;
-}
-
-.trust-icon-play::before {
-  content: '';
-  position: absolute;
-  inset: 1px;
-  border: 1.5px solid currentColor;
-  border-radius: 50%;
-}
-
-.trust-icon-play::after {
-  content: '';
-  position: absolute;
-  left: 7px;
-  top: 5px;
-  border-left: 6px solid currentColor;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-}
-
-.trust-icon-heart::before {
-  content: '♡';
-  position: absolute;
-  inset: -4px 0 0;
-  font-size: 22px;
-  line-height: 1;
-}
-
-.trust-title {
-  margin: 0 0 4px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--dark-text);
-}
-
-.trust-body {
-  margin: 0;
-  font-size: 0.86rem;
-  line-height: 1.45;
+.example-copy {
+  max-width: 780px;
+  font-size: 1.05rem;
+  line-height: 1.65;
   color: var(--dark-muted);
+}
+
+.example-copy p {
+  margin: 0;
+}
+
+.example-list {
+  display: grid;
+  gap: 14px;
+  margin: 1.3rem 0 1.5rem;
+  padding-left: 1.2rem;
+  color: var(--dark-text);
 }
 
 /* ── Problem ─────────────────────────────────────────────────────── */
@@ -609,16 +527,19 @@ a {
   color: var(--dark-muted);
 }
 
-.why-bullets {
+.why-body {
   margin: 0;
-  padding-left: 1.1rem;
   color: var(--dark-muted);
   line-height: 1.7;
   font-size: 1.05rem;
 }
 
-.why-bullets li {
-  margin-bottom: 0.65rem;
+.why-body p {
+  margin: 0 0 0.85rem;
+}
+
+.why-body p:last-child {
+  margin-bottom: 0;
 }
 
 /* ── Outcomes ────────────────────────────────────────────────────── */
@@ -776,6 +697,14 @@ a {
   gap: 18px;
 }
 
+.cta-subheading {
+  margin: 0;
+  max-width: 560px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .cta-note {
   margin: 0;
   font-size: 14px;
@@ -862,10 +791,6 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .trust-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .how-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -893,7 +818,6 @@ a {
 }
 
 @media (max-width: 640px) {
-  .trust-grid,
   .how-grid {
     grid-template-columns: 1fr;
   }

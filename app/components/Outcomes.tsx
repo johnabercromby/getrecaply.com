@@ -1,19 +1,19 @@
 const cards = [
   {
-    title: 'Synthesised, not bookmarked',
-    body: 'Hear the through-line across what you saved, not a robotic read-aloud of each tab.',
+    title: 'Finally get value from what you save',
+    body: 'The things you save are usually things you care about. Recaply helps you come back to them.',
   },
   {
-    title: 'Built for between moments',
-    body: 'Commutes, chores, and walks become the easiest “reading block” you never had to schedule.',
+    title: 'Less digital guilt',
+    body: 'No more collecting articles for a future version of yourself.',
   },
   {
-    title: 'A loop you can close',
-    body: 'Finish episodes of curiosity instead of collecting homework for a future self who never arrives.',
+    title: 'Stay curious',
+    body: "Keep discovering interesting things without feeling like you're creating homework.",
   },
   {
-    title: 'Indie-shaped product',
-    body: 'Made with care, shipped with restraint, and designed to respect your attention, not harvest it.',
+    title: 'Keep up with your own interests',
+    body: 'Because the things that caught your attention in the first place are worth revisiting.',
   },
 ];
 
