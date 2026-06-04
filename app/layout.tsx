@@ -3,29 +3,45 @@ import { GeistSans } from 'geist/font/sans';
 import './globals.css';
 
 const description =
-  'Recaply turns what you save into audio you actually listen to, so nothing you find is wasted.';
+  'You save articles, videos, podcasts and ideas because they interest you. Recaply turns them into a personalised weekly audio recap.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://getrecaply.com'),
-  title: 'Recaply: Saved for later. Later is here.',
+  title: {
+    default: 'Recaply — Saved for later. Later is here.',
+    template: '%s · Recaply',
+  },
   description,
   openGraph: {
-    title: 'Recaply: Saved for later. Later is here.',
-    description,
-    url: 'https://getrecaply.com/',
-    siteName: 'Recaply',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Recaply' }],
     type: 'website',
+    url: 'https://getrecaply.com',
+    siteName: 'Recaply',
+    title: 'Recaply — Saved for later. Later is here.',
+    description: 'A personalised weekly audio recap of everything you saved.',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Recaply — Saved for later. Later is here.',
+      },
+    ],
+    locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Recaply: Saved for later. Later is here.',
-    description,
-    images: ['/og.png'],
+    title: 'Recaply — Saved for later. Later is here.',
+    description: 'A personalised weekly audio recap of everything you saved.',
+    images: ['/og-image.png'],
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/icon.png', type: 'image/png', sizes: '32x32' },
+      { url: '/icon-192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/icon-512.png', type: 'image/png', sizes: '512x512' },
+    ],
     apple: '/apple-touch-icon.png',
+    shortcut: '/favicon.ico',
   },
 };
 

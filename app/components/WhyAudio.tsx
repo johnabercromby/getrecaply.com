@@ -7,13 +7,12 @@ export function WhyAudio() {
         <div className="why-copy">
           <p className="eyebrow">WHY AUDIO</p>
           <h2 id="why-heading" className="display-headline">
-            Because finding time is the hard part.
+            You'll never find the time to sit and read it.
           </h2>
           <div className="why-body">
-            <p>Most people don't struggle to find interesting things. They struggle to find time for them.</p>
-            <p>Recaply turns the things you've saved into something you can listen to whenever it suits you.</p>
-            <p>No reading list. No guilt. No catching up at the weekend.</p>
-            <p>Just a simple way to stay connected to the things that interested you.</p>
+            <p>Listening fits into your life.</p>
+            <p>Reading needs you to stop everything. Listening needs nothing.</p>
+            <p>A walk, the school run, the washing up. That's when Recaply gets through the things you saved.</p>
           </div>
         </div>
 
