@@ -1,4 +1,5 @@
 import { PhoneShell } from './PhoneShell';
+import { AppScreenshot } from './AppScreenshot';
 
 export function WhyAudio() {
   return (
@@ -7,24 +8,18 @@ export function WhyAudio() {
         <div className="why-copy">
           <p className="eyebrow">WHY AUDIO</p>
           <h2 id="why-heading" className="display-headline">
-            You'll never find the time to sit and read it.
+            One recap. Made from your week.
           </h2>
           <div className="why-body">
-            <p>Listening fits into your life.</p>
-            <p>Reading needs you to stop everything. Listening needs nothing.</p>
-            <p>A walk, the school run, the washing up. That's when Recaply gets through the things you saved.</p>
+            <p>Reading asks for your attention. Listening fits around your life.</p>
+            <p>On a walk. While driving. While cooking dinner. Come back to what caught your attention, whenever it suits you.</p>
+            <p>Your audio recap is delivered weekly, on the day you choose.</p>
           </div>
         </div>
 
         <div className="why-phone-visual" aria-label="Recap detail app screen">
           <PhoneShell className="phone-shell-app-shot">
-            <img
-              className="phone-screen-img"
-              src="/images/apps/full/recap-detail.png"
-              alt="Recap detail screen"
-              width={1179}
-              height={2406}
-            />
+            <AppScreenshot screen="recap-detail" />
           </PhoneShell>
         </div>
       </div>

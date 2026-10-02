@@ -1,11 +1,11 @@
 const cards = [
   {
     title: 'Finally get value from what you save',
-    body: 'The things you save are usually things you care about. Recaply helps you come back to them.',
+    body: 'Come back to the ideas that caught your attention, and take something useful into your day.',
   },
   {
     title: 'Less digital guilt',
-    body: 'No more collecting articles for a future version of yourself.',
+    body: 'Less “I’ll get to it later.” More moments where you actually do.',
   },
   {
     title: 'Stay curious',
@@ -13,7 +13,7 @@ const cards = [
   },
   {
     title: 'Keep up with your own interests',
-    body: 'Because the things that caught your attention in the first place are worth revisiting.',
+    body: 'An audio recap shaped by what you save, so your own curiosity leads the way.',
   },
 ];
 

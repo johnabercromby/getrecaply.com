@@ -8,7 +8,7 @@ export function Footer() {
           <div className="footer-brand">
             <RecaplyLogo variant="footer" />
           </div>
-          <p className="footer-tagline">Turn saves into something you actually finish.</p>
+          <p className="footer-tagline">What you save. Connected in one personalised audio recap.</p>
         </div>
         <div className="footer-col">
           <h3 className="footer-heading">Product</h3>

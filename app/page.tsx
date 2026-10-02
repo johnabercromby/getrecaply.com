@@ -14,7 +14,7 @@ const mobileApplicationJsonLd = {
   '@type': 'MobileApplication',
   name: 'Recaply',
   description:
-    'Recaply turns what you save into audio you actually listen to, so nothing you find is wasted.',
+    'Recaply connects the themes and ideas across what you save and turns them into a personalised audio recap.',
   url: 'https://getrecaply.com/',
   downloadUrl: 'https://apps.apple.com/app/recaply/id6757158392',
   operatingSystem: 'iOS',

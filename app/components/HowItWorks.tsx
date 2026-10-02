@@ -1,23 +1,23 @@
 const steps = [
   {
     n: '01',
-    title: 'You save things',
-    body: 'Articles, videos, podcasts, newsletters, screenshots, notes. Whatever catches your attention.',
+    title: 'Reviewing your saves',
+    body: 'It starts with what caught your attention: Articles. Videos. Notes. Photos.',
   },
   {
     n: '02',
-    title: 'We organise them',
-    body: "Recaply reads, watches and groups everything you've saved.",
+    title: 'Connecting themes',
+    body: "Recaply finds the themes and connections across what you've saved.",
   },
   {
     n: '03',
-    title: 'Get your recap',
-    body: 'A personalised audio recap delivered on the day you choose.',
+    title: 'Personalising to you',
+    body: 'Your saves shape the story, bringing your interests and ideas together.',
   },
   {
     n: '04',
-    title: 'Listen when it suits you',
-    body: 'On a walk. In the car. While cooking dinner. Whenever works for you.',
+    title: 'Creating your audio recap',
+    body: 'One coherent audio recap, ready for you to come back to.',
   },
 ] as const;
 
@@ -27,17 +27,20 @@ export function HowItWorks() {
       <div className="section-inner">
         <p className="eyebrow">HOW IT WORKS</p>
         <h2 id="how-heading" className="display-headline">
-          You save things. <span className="headline-soft">We help you come back to them.</span>
+          Recaply connects the dots.
         </h2>
-        <div className="how-grid">
+        <p className="how-intro">
+          It finds the useful connections across what you’ve saved and turns them into one coherent audio recap.
+        </p>
+        <ol className="how-grid">
           {steps.map((s) => (
-            <article key={s.n} className="how-card">
+            <li key={s.n} className="how-card">
               <span className="how-card-number">{s.n}</span>
               <h3 className="how-card-title">{s.title}</h3>
               <p className="how-card-body">{s.body}</p>
-            </article>
+            </li>
           ))}
-        </div>
+        </ol>
       </div>
     </section>
   );

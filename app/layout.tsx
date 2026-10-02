@@ -3,12 +3,12 @@ import { GeistSans } from 'geist/font/sans';
 import './globals.css';
 
 const description =
-  'You save articles, videos, podcasts and ideas because they interest you. Recaply turns them into a personalised weekly audio recap.';
+  'Turn what you save into a personalised audio recap. Articles. Videos. Notes. Photos. Recaply connects the themes and ideas across your saves.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://getrecaply.com'),
   title: {
-    default: 'Recaply — Saved for later. Later is here.',
+    default: 'Recaply — You saved it for a reason.',
     template: '%s · Recaply',
   },
   description,
@@ -16,23 +16,23 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://getrecaply.com',
     siteName: 'Recaply',
-    title: 'Recaply — Saved for later. Later is here.',
-    description: 'A personalised weekly audio recap of everything you saved.',
+    title: 'Recaply — You saved it for a reason.',
+    description,
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-launch.png',
         width: 1200,
         height: 630,
-        alt: 'Recaply — Saved for later. Later is here.',
+        alt: 'Recaply — You saved it for a reason.',
       },
     ],
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Recaply — Saved for later. Later is here.',
-    description: 'A personalised weekly audio recap of everything you saved.',
-    images: ['/og-image.png'],
+    title: 'Recaply — You saved it for a reason.',
+    description,
+    images: ['/og-launch.png'],
   },
   icons: {
     icon: [

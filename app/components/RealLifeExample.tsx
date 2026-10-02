@@ -1,9 +1,8 @@
 const savedItems = [
-  'A podcast about investing',
-  'An article on ADHD',
-  'A YouTube video about sourdough',
-  'A newsletter about AI',
-  "A note about a holiday you'd like to book",
+  { type: 'Article', title: 'Making room for a little more focus' },
+  { type: 'Video', title: 'A dinner worth slowing down for' },
+  { type: 'Note', title: 'Things I’d like to do differently' },
+  { type: 'Photo', title: 'That walking route for the weekend' },
 ] as const;
 
 export function RealLifeExample() {
@@ -11,20 +10,35 @@ export function RealLifeExample() {
     <section className="example-section" aria-labelledby="example-heading">
       <div className="section-inner">
         <h2 id="example-heading" className="display-headline display-headline-on-dark">
-          A typical week might look like this.
+          Save anything worth coming back to.
         </h2>
-        <div className="example-copy">
-          <p>This week you save:</p>
-          <ul className="example-list">
+        <p className="example-copy">Articles. Videos. Notes. Photos. Whatever catches your attention.</p>
+        <div className="example-flow" aria-label="Example: four saves flow into Recaply and become one audio recap">
+          <ul className="example-saves">
             {savedItems.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item.type}>
+                <span className="example-type">{item.type}</span>
+                <span>{item.title}</span>
+              </li>
             ))}
           </ul>
-          <p>
-            You don't need to find time to go back to all of them individually. Recaply brings them together into a
-            single audio recap you can listen to whenever it suits you.
-          </p>
+          <div className="example-connection">
+            <span className="flow-arrow" aria-hidden="true">→</span>
+            <span className="example-hub">Recaply</span>
+            <span className="flow-arrow" aria-hidden="true">→</span>
+          </div>
+          <div className="example-recap">
+            <span className="example-type">Your audio recap · Example</span>
+            <h3>Ideas for a better week.</h3>
+            <p>A little more focus. Time for yourself. The ideas worth making room for.</p>
+            <div className="example-wave" aria-hidden="true">
+              {[12, 22, 16, 30, 38, 24, 16, 32, 42, 26, 18, 34, 22, 14, 28, 36, 20, 12].map((height, i) => (
+                <span key={i} style={{ height }} />
+              ))}
+            </div>
+          </div>
         </div>
+        <p className="example-copy">Different saves. Shared themes. Something useful to come back to.</p>
       </div>
     </section>
   );

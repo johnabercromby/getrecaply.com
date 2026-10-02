@@ -1,5 +1,6 @@
 import { AppStoreBadgeLink } from './AppStoreBadgeLink';
 import { PhoneShell } from './PhoneShell';
+import { AppScreenshot } from './AppScreenshot';
 
 export function Hero() {
   return (
@@ -8,11 +9,14 @@ export function Hero() {
         <div className="hero-copy">
           <p className="hero-app-pill">Now on the App Store</p>
           <h1 id="hero-heading" className="display-headline">
-            Saved for later. Later is here.
+            You saved it for a reason.
           </h1>
           <p className="hero-lede">
-            You save articles, videos, podcasts and ideas because they interest you. Recaply turns them into a
-            personalised weekly audio recap so you can finally catch up with the things that caught your attention.
+            Turn what you save into a personalised audio recap.
+          </p>
+          <p className="hero-support">
+            Articles. Videos. Notes. Photos. Recaply connects the themes and ideas across what you save,
+            so you can actually come back to them.
           </p>
           <div className="hero-actions">
             <AppStoreBadgeLink variant="hero" />
@@ -24,13 +28,7 @@ export function Hero() {
 
         <div className="hero-visual" aria-hidden>
           <PhoneShell className="hero-phone-frame">
-            <img
-              className="phone-screen-img phone-screen-img-cover"
-              src="/images/apps/full/home.png"
-              alt=""
-              width={1179}
-              height={2406}
-            />
+            <AppScreenshot screen="home" />
           </PhoneShell>
         </div>
       </div>
