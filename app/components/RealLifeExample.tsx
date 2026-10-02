@@ -1,7 +1,7 @@
 const savedItems = [
-  { type: 'Article', title: 'Making room for a little more focus' },
-  { type: 'Video', title: 'A dinner worth slowing down for' },
-  { type: 'Note', title: 'Things I’d like to do differently' },
+  { type: 'Article', title: 'Why your attention keeps getting fragmented' },
+  { type: 'Video', title: '5 ways to make your mornings less chaotic' },
+  { type: 'Note', title: 'Things I want to do differently' },
   { type: 'Photo', title: 'That walking route for the weekend' },
 ] as const;
 

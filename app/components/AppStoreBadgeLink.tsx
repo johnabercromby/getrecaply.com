@@ -1,4 +1,7 @@
+'use client';
+
 import type { CSSProperties } from 'react';
+import { trackAppStoreClick } from '../lib/analytics';
 
 /** Official App Store badge artwork from Apple Marketing Tools (AMS). */
 const APP_STORE_HREF = 'https://apps.apple.com/app/recaply/id6757158392';
@@ -34,6 +37,7 @@ export function AppStoreBadgeLink({ variant, className = '' }: AppStoreBadgeLink
   return (
     <a
       href={APP_STORE_HREF}
+      onClick={() => trackAppStoreClick(variant)}
       className={anchorClass}
       target="_blank"
       rel="noopener"

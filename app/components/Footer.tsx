@@ -1,4 +1,5 @@
 import { RecaplyLogo } from './RecaplyLogo';
+import { PrivacyNotice } from './PrivacyNotice';
 
 export function Footer() {
   return (
@@ -21,6 +22,7 @@ export function Footer() {
         <div className="footer-col">
           <h3 className="footer-heading">Legal</h3>
           <div className="footer-stack">
+            <PrivacyNotice />
             <a href="https://recaply.app/privacy" target="_blank" rel="noopener noreferrer">
               Privacy
             </a>

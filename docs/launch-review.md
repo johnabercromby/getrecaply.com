@@ -38,3 +38,18 @@ Limits: these findings describe the inspected public page and code, not hosting 
 - ESLint passed with two existing `no-img-element` warnings (App Store badge and logo).
 - Desktop and mobile browser review, including navigation anchors, app imagery and the saved-content flow.
 - Local preview serves the production static export at http://127.0.0.1:3333/ while the preview server is running.
+
+## Privacy notice addition — local follow-up
+
+Added a non-blocking privacy information panel and a “Privacy & cookies” footer control. No analytics, advertising tags or consent-dependent scripts were added. This is an informational notice for the currently audited setup, not an accept/reject consent manager.
+
+On “Dismiss for this visit”, the panel writes `recaply:privacy-notice:v1 = dismissed` to sessionStorage. Its sole purpose is remembering dismissal in the current tab's browser session; it has no identifier and is not transmitted. Reopening through the footer removes that key. If storage is blocked, dismissal still works in memory until a reload. No localStorage or new cookies are used. The panel discloses the Apple badge request, Vercel hosting, collaborator-only toolbar behaviour and the separate app privacy policy.
+
+Basis reviewed: the ICO's current storage/access guidance, particularly session preferences not linked to persistent identifiers:
+https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/what-are-the-exceptions/
+
+This implementation does not certify the entire site's legal compliance. Re-audit and add genuine prior consent controls before introducing advertising or other consent-requiring tracking; dismissing this notice grants no such consent.
+
+## Superseding analytics integration
+
+The draft informational notice above has been replaced locally with explicit accept/reject analytics controls for Google Tag Manager. See [analytics-setup.md](analytics-setup.md) for the current storage, consent, event and publishing requirements. The original live-site audit remains a historical record; it does not describe the new pending integration.

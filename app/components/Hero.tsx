@@ -1,6 +1,5 @@
 import { AppStoreBadgeLink } from './AppStoreBadgeLink';
-import { PhoneShell } from './PhoneShell';
-import { AppScreenshot } from './AppScreenshot';
+import Image from 'next/image';
 
 export function Hero() {
   return (
@@ -27,9 +26,16 @@ export function Hero() {
         </div>
 
         <div className="hero-visual" aria-hidden>
-          <PhoneShell className="hero-phone-frame">
-            <AppScreenshot screen="home" />
-          </PhoneShell>
+          <div className="hero-phone-mockup">
+            <Image
+              src="/images/apps/hero-phone.png"
+              alt=""
+              width={1000}
+              height={2000}
+              unoptimized
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -325,6 +325,21 @@ a {
   filter: drop-shadow(0 12px 32px rgba(15, 26, 40, 0.12));
 }
 
+/* The supplied artwork includes its own device frame and tight crop. */
+.hero-phone-mockup {
+  position: relative;
+  width: min(100%, 340px);
+  aspect-ratio: 1 / 2;
+  transform: rotate(2deg);
+  filter: drop-shadow(0 12px 32px rgba(15, 26, 40, 0.12));
+}
+
+.hero-phone-mockup img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .hero-phone-frame .phone-screen {
   padding: 0;
   background: var(--dark-bg);
@@ -1060,4 +1075,148 @@ section[id] {
     max-width: 150px;
     max-height: 42px;
   }
+}
+
+/* Informational privacy notice: no overlay or blocked page interaction. */
+.privacy-footer-link {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: rgba(255, 255, 255, 0.72);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.privacy-notice {
+  position: fixed;
+  z-index: 60;
+  right: max(20px, env(safe-area-inset-right));
+  bottom: max(20px, env(safe-area-inset-bottom));
+  width: min(420px, calc(100vw - 40px));
+  max-height: calc(100dvh - var(--nav-h) - 40px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 24px;
+  border: 1px solid rgba(230, 180, 126, 0.65);
+  border-radius: 20px;
+  background: var(--cream);
+  color: var(--navy);
+  box-shadow: 0 12px 48px rgba(15, 26, 40, 0.22);
+  font-size: 14px;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.privacy-notice .privacy-kicker {
+  margin: 0 0 8px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.privacy-notice h2 {
+  margin: 0 0 10px;
+  font-size: 23px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.privacy-notice p {
+  margin: 0 0 14px;
+}
+
+.privacy-details summary {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.privacy-details[open] summary {
+  margin-bottom: 12px;
+}
+
+.privacy-details p {
+  font-size: 13px;
+}
+
+.privacy-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px 20px;
+  margin-top: 20px;
+}
+
+.privacy-dismiss {
+  padding: 11px 16px;
+  border: 1px solid var(--navy);
+  border-radius: 10px;
+  background: var(--navy);
+  color: var(--cream);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.site-footer .privacy-notice a {
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.privacy-notice .privacy-footnote {
+  margin: 14px 0 0;
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+
+.privacy-notice :focus-visible,
+.privacy-footer-link:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+}
+
+.privacy-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .privacy-notice {
+    left: 12px;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    width: calc(100vw - 24px);
+    padding: 20px;
+  }
+}
+
+.privacy-consent-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.privacy-consent-actions .privacy-dismiss {
+  padding-inline: 10px;
+}
+
+.privacy-close {
+  border: 0;
+  background: none;
+  color: var(--navy);
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
