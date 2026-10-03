@@ -27,7 +27,7 @@ export function HowItWorks() {
       <div className="section-inner">
         <p className="eyebrow">HOW IT WORKS</p>
         <h2 id="how-heading" className="display-headline">
-          Recaply connects the dots.
+          Your saves, made into a personalised audio recap.
         </h2>
         <p className="how-intro">
           It brings together the themes across your saves, so you can catch up on the ideas in one personalised audio recap.

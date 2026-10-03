@@ -3,7 +3,7 @@ export function ProblemSection() {
     <section id="problem" className="problem-section" aria-labelledby="problem-heading">
       <div className="section-inner">
         <h2 id="problem-heading" className="display-headline display-headline-on-dark">
-          Curiosity shouldn’t become a backlog.
+          You saved it. Did you come back to it?
         </h2>
         <div className="problem-columns">
           <p>
