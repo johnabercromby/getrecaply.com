@@ -3,7 +3,7 @@ import { GeistSans } from 'geist/font/sans';
 import './globals.css';
 
 const description =
-  'Turn what you save into a personalised audio recap. Articles. Videos. Notes. Photos. Recaply connects the themes and ideas across your saves.';
+  'Get more from what you save with a personalised audio recap. Catch up on articles, videos, notes and photos while walking, driving or cooking.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://getrecaply.com'),

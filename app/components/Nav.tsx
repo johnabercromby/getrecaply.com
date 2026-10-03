@@ -15,7 +15,7 @@ export function Nav() {
         <nav className="site-nav-links" aria-label="Primary">
           <a href="#how">How it works</a>
           <a href="#why-audio">Why audio</a>
-          <a href="#outcomes">Features</a>
+          <a href="#outcomes">Benefits</a>
         </nav>
 
         <div className="site-nav-right">

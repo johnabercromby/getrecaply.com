@@ -9,14 +9,14 @@ export function Footer() {
           <div className="footer-brand">
             <RecaplyLogo variant="footer" />
           </div>
-          <p className="footer-tagline">What you save. Connected in one personalised audio recap.</p>
+          <p className="footer-tagline">The things you save, turned into something worth hearing.</p>
         </div>
         <div className="footer-col">
           <h3 className="footer-heading">Product</h3>
           <div className="footer-stack">
             <a href="#how">How it works</a>
             <a href="#why-audio">Why audio</a>
-            <a href="#outcomes">Features</a>
+            <a href="#outcomes">Benefits</a>
           </div>
         </div>
         <div className="footer-col">

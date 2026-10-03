@@ -11,8 +11,8 @@ export function ProblemSection() {
             A note or photo you don't want to lose.
           </p>
           <p>
-            The problem isn't finding interesting things. It's finding time to come back to them. That's where Recaply
-            helps.
+            Then life moves on, and those good intentions pile up. Recaply gives you a way to catch up on what you saved,
+            without finding time to work through it all.
           </p>
         </div>
       </div>

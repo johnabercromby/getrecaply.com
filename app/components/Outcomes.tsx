@@ -1,19 +1,19 @@
 const cards = [
   {
-    title: 'Finally get value from what you save',
-    body: 'Come back to the ideas that caught your attention, and take something useful into your day.',
+    title: 'Take something useful into your day',
+    body: 'An idea to try. A different perspective. Something worth remembering from what you saved.',
   },
   {
     title: 'Less digital guilt',
     body: 'Less “I’ll get to it later.” More moments where you actually do.',
   },
   {
-    title: 'Stay curious',
-    body: "Keep discovering interesting things without feeling like you're creating homework.",
+    title: 'Stay curious, without the homework',
+    body: "Keep discovering interesting things without turning every save into another task.",
   },
   {
-    title: 'Keep up with your own interests',
-    body: 'An audio recap shaped by what you save, so your own curiosity leads the way.',
+    title: 'Make time for your interests',
+    body: 'Catch up on the things that interest you while getting on with your day.',
   },
 ];
 

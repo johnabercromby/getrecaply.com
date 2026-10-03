@@ -11,11 +11,11 @@ export function Hero() {
             You saved it for a reason.
           </h1>
           <p className="hero-lede">
-            Turn what you save into a personalised audio recap.
+            Turn the things you save into a personalised audio recap you’ll actually use.
           </p>
           <p className="hero-support">
-            Articles. Videos. Notes. Photos. Recaply connects the themes and ideas across what you save,
-            so you can actually come back to them.
+            Articles. Videos. Notes. Photos. Turn the things you meant to come back to into something you can catch up on,
+            even when you don’t have time to sit down and read.
           </p>
           <div className="hero-actions">
             <AppStoreBadgeLink variant="hero" />

@@ -7,7 +7,7 @@ export function CTA() {
         <h2 id="cta-heading" className="display-headline display-headline-on-dark">
           You saved it for a reason.
         </h2>
-        <p className="cta-subheading">Turn what you save into a personalised audio recap.</p>
+        <p className="cta-subheading">Catch up on what caught your attention. Make something of what you saved.</p>
         <AppStoreBadgeLink variant="cta" />
         <p className="cta-note">Android · coming later this year</p>
       </div>

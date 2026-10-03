@@ -1,23 +1,23 @@
 const steps = [
   {
     n: '01',
-    title: 'Reviewing your saves',
-    body: 'It starts with what caught your attention: Articles. Videos. Notes. Photos.',
+    title: 'Start with what interests you',
+    body: 'Articles. Videos. Notes. Photos. Save the things you want to come back to.',
   },
   {
     n: '02',
-    title: 'Connecting themes',
-    body: "Recaply finds the themes and connections across what you've saved.",
+    title: 'Find the shared ideas',
+    body: "Recaply finds themes and connections across what you’ve saved.",
   },
   {
     n: '03',
-    title: 'Personalising to you',
-    body: 'Your saves shape the story, bringing your interests and ideas together.',
+    title: 'Keep it personal',
+    body: 'Your saves shape the recap, keeping it grounded in what caught your attention.',
   },
   {
     n: '04',
-    title: 'Creating your audio recap',
-    body: 'One coherent audio recap, ready for you to come back to.',
+    title: 'Catch up by listening',
+    body: 'Come back to those ideas in one audio recap, without opening each save in turn.',
   },
 ] as const;
 
@@ -30,7 +30,7 @@ export function HowItWorks() {
           Recaply connects the dots.
         </h2>
         <p className="how-intro">
-          It finds the useful connections across what you’ve saved and turns them into one coherent audio recap.
+          It brings together the themes across your saves, so you can catch up on the ideas in one personalised audio recap.
         </p>
         <ol className="how-grid">
           {steps.map((s) => (

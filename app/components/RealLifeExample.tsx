@@ -10,9 +10,9 @@ export function RealLifeExample() {
     <section className="example-section" aria-labelledby="example-heading">
       <div className="section-inner">
         <h2 id="example-heading" className="display-headline display-headline-on-dark">
-          Save anything worth coming back to.
+          Make ‘save for later’ actually useful.
         </h2>
-        <p className="example-copy">Articles. Videos. Notes. Photos. Whatever catches your attention.</p>
+        <p className="example-copy">An idea to try. Something to understand. A plan for the weekend. Your saves can become something useful to listen to.</p>
         <div className="example-flow" aria-label="Example: four saves flow into Recaply and become one audio recap">
           <ul className="example-saves">
             {savedItems.map((item) => (
