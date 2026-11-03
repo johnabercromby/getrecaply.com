@@ -48,7 +48,7 @@ export function PrivacyNotice() {
             <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google’s privacy policy<span className="privacy-sr-only"> (opens in a new tab)</span></a>
           </details>
           <div className="privacy-actions">
-            <a href="https://recaply.app/privacy" target="_blank" rel="noopener noreferrer">Recaply privacy policy<span className="privacy-sr-only"> (opens in a new tab)</span></a>
+            <a href="/privacy" target="_blank" rel="noopener noreferrer">Recaply privacy policy<span className="privacy-sr-only"> (opens in a new tab)</span></a>
             {reopened && choice !== 'unknown' && <button type="button" className="privacy-close" onClick={() => setReopened(false)}>Keep current choice</button>}
           </div>
           <p className="privacy-footnote">Your choice is remembered for 90 days. Both options let you use the site.</p>

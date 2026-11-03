@@ -23,10 +23,10 @@ export function Footer() {
           <h3 className="footer-heading">Legal</h3>
           <div className="footer-stack">
             <PrivacyNotice />
-            <a href="https://recaply.app/privacy" target="_blank" rel="noopener noreferrer">
+            <a href="/privacy" target="_blank" rel="noopener noreferrer">
               Privacy
             </a>
-            <a href="https://recaply.app/terms" target="_blank" rel="noopener noreferrer">
+            <a href="/terms" target="_blank" rel="noopener noreferrer">
               Terms
             </a>
           </div>

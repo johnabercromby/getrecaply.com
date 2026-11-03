@@ -1220,3 +1220,15 @@ section[id] {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* Existing legal wording, migrated from recaply.app without editorial changes. */
+.legal-nav { display: flex; flex-wrap: wrap; gap: 1.5rem; max-width: 48rem; margin: auto; padding: 1.5rem; }
+.legal-nav a { text-decoration: underline; }
+.legal-page { max-width: 48rem; margin: auto; padding: 0 1.5rem 4rem; color: var(--ink, #142436); background: transparent; }
+.legal-page h1 { font-size: 2rem; line-height: 1.2; margin: 1rem 0; }
+.legal-page h2 { font-size: 1.2rem; margin: 1.8rem 0 .6rem; }
+.legal-page h3 { font-size: 1.05rem; margin: 1rem 0 .5rem; }
+.legal-page p, .legal-page li { line-height: 1.7; }
+.legal-page p { margin: .75rem 0; }
+.legal-page ul { padding-left: 1.5rem; list-style: disc; }
+.legal-page a { text-decoration: underline; overflow-wrap: anywhere; }
