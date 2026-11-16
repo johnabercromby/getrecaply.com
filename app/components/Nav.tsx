@@ -13,6 +13,7 @@ export function Nav() {
         </div>
 
         <nav className="site-nav-links" aria-label="Primary">
+          <Link href="/" aria-current="page">Home</Link>
           <a href="#how">How it works</a>
           <a href="#why-audio">Why audio</a>
           <a href="#outcomes">Benefits</a>

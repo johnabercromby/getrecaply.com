@@ -37,7 +37,7 @@ const faqJsonLd = {
 export default function FAQPage() {
   return <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-    <ContentNav />
+    <ContentNav currentPage="faq" />
     <main className="content-page">
       <header className="content-header">
         <p className="eyebrow">QUESTIONS & ANSWERS</p>

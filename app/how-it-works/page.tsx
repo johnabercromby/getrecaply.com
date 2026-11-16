@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function HowItWorksPage() {
   return <>
-    <ContentNav />
+    <ContentNav currentPage="how-it-works" />
     <main className="content-page">
       <header className="content-header">
         <p className="eyebrow">SAVE → RECAP → LISTEN</p>

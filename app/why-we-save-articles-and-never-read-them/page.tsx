@@ -18,7 +18,7 @@ const articleJsonLd = { '@context': 'https://schema.org', '@type': 'Article', he
 export default function ReadingBacklogArticle() {
   return <>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-    <ContentNav />
+    <ContentNav currentPage="reading-guide" />
     <main className="content-page content-article">
       <header className="content-header">
         <p className="eyebrow">THE READING BACKLOG</p>
