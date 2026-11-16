@@ -40,7 +40,7 @@ export function PrivacyNotice() {
           </div>
           <details className="privacy-details">
             <summary>What this website uses</summary>
-            <p><strong>Essential preference:</strong> we store your accept or reject choice in your browser for 90 days. It contains no personal identifier. Change it anytime using “Privacy &amp; cookies” in the footer.</p>
+            <p><strong>Essential preference:</strong> we store your accept or reject choice in your browser for 90 days. It contains no personal identifier. Change it anytime using “Privacy &amp; cookies”.</p>
             <p><strong>Optional analytics:</strong> accepting allows Google Tag Manager to load our Google Analytics tags. Google receives information about pages visited, referral sources, device/browser details and App Store clicks. Analytics cookies can recognise your browser across visits. Google processes this information under its privacy terms.</p>
             <p><strong>Other services:</strong> the App Store badge loads from Apple, and Vercel hosts this website. They receive normal request information such as your IP address. Site collaborators who opted into Vercel’s review toolbar may also have a toolbar preference cookie.</p>
             <p>Rejecting keeps Google Tag Manager unloaded. If you change from accept to reject, we clear accessible Google Analytics cookies and reload to stop already-loaded tags. This does not erase data already sent.</p>

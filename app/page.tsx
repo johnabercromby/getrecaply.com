@@ -15,7 +15,7 @@ const mobileApplicationJsonLd = {
   name: 'Recaply',
   description:
     'Recaply connects the themes and ideas across what you save and turns them into a personalised audio recap.',
-  url: 'https://getrecaply.com/',
+  url: 'https://www.getrecaply.com',
   downloadUrl: 'https://apps.apple.com/app/recaply/id6757158392',
   operatingSystem: 'iOS',
   applicationCategory: 'ProductivityApplication',
@@ -26,12 +26,24 @@ const mobileApplicationJsonLd = {
   },
 };
 
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Recaply',
+  url: 'https://www.getrecaply.com',
+  logo: 'https://www.getrecaply.com/recaply-logo-light@2x.png',
+};
+
 export default function Home() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(mobileApplicationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
       />
       <Nav />
       <Hero />

@@ -1,27 +1,25 @@
 import { AppStoreBadgeLink } from './AppStoreBadgeLink';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export function Hero() {
   return (
     <section className="hero-section" aria-labelledby="hero-heading">
       <div className="hero-inner">
         <div className="hero-copy">
-          <p className="hero-app-pill">Now on the App Store</p>
+          <p className="hero-app-pill">Available on iPhone</p>
           <h1 id="hero-heading" className="display-headline">
             You saved it for a reason.
           </h1>
           <p className="hero-lede">
-            Turn the things you save into a personalised audio recap you’ll actually use.
+            Turn what you save into a weekly audio recap, so useful ideas don’t stay forgotten.
           </p>
           <p className="hero-support">
-            Articles. Videos. Notes. Photos. Turn the things you meant to come back to into something you can catch up on,
-            even when you don’t have time to sit down and read.
+            Save links to articles or videos, notes and photos. Recaply brings the themes together so you can catch up while life carries on.
           </p>
           <div className="hero-actions">
             <AppStoreBadgeLink variant="hero" />
-            <a href="#how" className="text-link">
-              See how it works
-            </a>
+            <Link href="/how-it-works" className="text-link">See Save → Recap → Listen</Link>
           </div>
         </div>
 

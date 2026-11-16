@@ -1,4 +1,5 @@
 import { AppStoreBadgeLink } from './AppStoreBadgeLink';
+import Link from 'next/link';
 
 export function CTA() {
   return (
@@ -9,7 +10,8 @@ export function CTA() {
         </h2>
         <p className="cta-subheading">Catch up on what caught your attention. Make something of what you saved.</p>
         <AppStoreBadgeLink variant="cta" />
-        <p className="cta-note">Android · coming later this year</p>
+        <p className="cta-note">Free to download on iPhone · In-app purchases available</p>
+        <p className="cta-note">Android is not publicly available yet. <Link href="/faq">Questions? Read the FAQ.</Link></p>
       </div>
     </section>
   );

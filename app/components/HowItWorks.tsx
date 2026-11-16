@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 const steps = [
   {
     n: '01',
@@ -41,6 +44,17 @@ export function HowItWorks() {
             </li>
           ))}
         </ol>
+        <div className="how-product-preview" aria-label="Screens from the Recaply iPhone app">
+          <figure>
+            <Image src="/images/apps/snippets/quick-add.png" alt="Recaply options to save a link, note or photo" width={1100} height={330} unoptimized />
+            <figcaption>Save a link, note or photo.</figcaption>
+          </figure>
+          <figure>
+            <Image src="/images/apps/snippets/player-controls.png" alt="Recaply audio playback controls" width={1120} height={240} unoptimized />
+            <figcaption>Listen to your weekly recap.</figcaption>
+          </figure>
+        </div>
+        <p className="how-more"><Link href="/how-it-works">See the full Save → Recap → Listen journey</Link></p>
       </div>
     </section>
   );
