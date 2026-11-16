@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { AppStoreBadgeLink } from './AppStoreBadgeLink';
 import { RecaplyLogo } from './RecaplyLogo';
 
-type ContentPage = 'how-it-works' | 'faq' | 'reading-guide';
+type ContentPage = 'home' | 'how-it-works' | 'faq' | 'reading-guide';
 
 export function ContentNav({ currentPage }: { currentPage: ContentPage }) {
   return (
@@ -14,7 +14,7 @@ export function ContentNav({ currentPage }: { currentPage: ContentPage }) {
           </Link>
         </div>
         <nav className="site-nav-links" aria-label="Primary">
-          <Link href="/">Home</Link>
+          <Link href="/" aria-current={currentPage === 'home' ? 'page' : undefined}>Home</Link>
           <Link href="/how-it-works" aria-current={currentPage === 'how-it-works' ? 'page' : undefined}>How it works</Link>
           <Link href="/faq" aria-current={currentPage === 'faq' ? 'page' : undefined}>FAQ</Link>
           <Link href="/why-we-save-articles-and-never-read-them" aria-current={currentPage === 'reading-guide' ? 'page' : undefined}>Reading guide</Link>

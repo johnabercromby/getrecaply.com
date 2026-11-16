@@ -3,7 +3,7 @@ import { Footer } from './components/Footer';
 import { FounderQuote } from './components/FounderQuote';
 import { Hero } from './components/Hero';
 import { HowItWorks } from './components/HowItWorks';
-import { Nav } from './components/Nav';
+import { ContentNav } from './components/ContentNav';
 import { Outcomes } from './components/Outcomes';
 import { ProblemSection } from './components/ProblemSection';
 import { RealLifeExample } from './components/RealLifeExample';
@@ -45,7 +45,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
       />
-      <Nav />
+      <ContentNav currentPage="home" />
       <Hero />
       <RealLifeExample />
       <ProblemSection />
