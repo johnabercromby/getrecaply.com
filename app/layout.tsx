@@ -6,15 +6,18 @@ const description =
   'Get more from what you save with a personalised audio recap. Catch up on articles, videos, notes and photos while walking, driving or cooking.';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://getrecaply.com'),
+  metadataBase: new URL('https://www.getrecaply.com'),
   title: {
     default: 'Recaply — You saved it for a reason.',
     template: '%s · Recaply',
   },
   description,
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
-    url: 'https://getrecaply.com',
+    url: 'https://www.getrecaply.com/',
     siteName: 'Recaply',
     title: 'Recaply — You saved it for a reason.',
     description,

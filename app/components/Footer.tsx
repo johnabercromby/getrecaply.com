@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { RecaplyLogo } from './RecaplyLogo';
 import { PrivacyNotice } from './PrivacyNotice';
 
@@ -14,19 +15,22 @@ export function Footer() {
         <div className="footer-col">
           <h3 className="footer-heading">Product</h3>
           <div className="footer-stack">
-            <a href="#how">How it works</a>
-            <a href="#why-audio">Why audio</a>
-            <a href="#outcomes">Benefits</a>
+            <Link href="/#how">How it works</Link>
+            <Link href="/#why-audio">Why audio</Link>
+            <Link href="/#outcomes">Benefits</Link>
+            <Link href="/how-it-works">Save → Recap → Listen</Link>
+            <Link href="/faq">FAQ</Link>
+            <Link href="/why-we-save-articles-and-never-read-them">Reading guide</Link>
           </div>
         </div>
         <div className="footer-col">
           <h3 className="footer-heading">Legal</h3>
           <div className="footer-stack">
             <PrivacyNotice />
-            <a href="https://recaply.app/privacy" target="_blank" rel="noopener noreferrer">
+            <a href="/privacy" target="_blank" rel="noopener noreferrer">
               Privacy
             </a>
-            <a href="https://recaply.app/terms" target="_blank" rel="noopener noreferrer">
+            <a href="/terms" target="_blank" rel="noopener noreferrer">
               Terms
             </a>
           </div>

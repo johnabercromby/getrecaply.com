@@ -3,7 +3,7 @@ import { Footer } from './components/Footer';
 import { FounderQuote } from './components/FounderQuote';
 import { Hero } from './components/Hero';
 import { HowItWorks } from './components/HowItWorks';
-import { Nav } from './components/Nav';
+import { ContentNav } from './components/ContentNav';
 import { Outcomes } from './components/Outcomes';
 import { ProblemSection } from './components/ProblemSection';
 import { RealLifeExample } from './components/RealLifeExample';
@@ -15,7 +15,7 @@ const mobileApplicationJsonLd = {
   name: 'Recaply',
   description:
     'Recaply connects the themes and ideas across what you save and turns them into a personalised audio recap.',
-  url: 'https://getrecaply.com/',
+  url: 'https://www.getrecaply.com',
   downloadUrl: 'https://apps.apple.com/app/recaply/id6757158392',
   operatingSystem: 'iOS',
   applicationCategory: 'ProductivityApplication',
@@ -26,6 +26,14 @@ const mobileApplicationJsonLd = {
   },
 };
 
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Recaply',
+  url: 'https://www.getrecaply.com',
+  logo: 'https://www.getrecaply.com/recaply-logo-light@2x.png',
+};
+
 export default function Home() {
   return (
     <>
@@ -33,7 +41,11 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(mobileApplicationJsonLd) }}
       />
-      <Nav />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <ContentNav currentPage="home" />
       <Hero />
       <RealLifeExample />
       <ProblemSection />
